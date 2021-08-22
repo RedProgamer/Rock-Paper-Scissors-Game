@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+body {
+    font-family:-apple-system, BlinkMacSystemFont, 'Asap', sans-serif;
+    color: #fff;
+    background-color: #292C34;
+}
+
+.container {
+    max-width: 960px;
+    text-align: center;
+    margin: auto;
+}
+
+.heading {
+    font-size: 2.5rem;
+}
+
+.scores {
+    border: 5px solid #fff;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+}
+
+#player {
+    background: #E2584d;
+    padding: 2px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.user {
+    position: absolute;
+    top: 30px;
+    left: -35px;
+}
+
+.computer {
+    position: absolute;
+    top: 30px;
+    right: -33px;
+}
+
+#scores {
+    font-size: 3rem;
+    margin: auto;
+    text-align: center;
+}
+
+#result {
+    display: none;
+    font-family: 'Asap', sans-serif;
+    margin-top: 50px;
+    font-size: 2rem;
+    word-spacing: 0.4rem;
+    text-align: center;
+    /* margin: auto; */
+}
+
+.choices {
+    display: flex;
+    padding: 0px 164px;
+    padding-top: 50px;
+    justify-content: space-evenly;
+}
+
+.player-choice {
+    position: absolute;
+    top: 31px;
+    font-size: 35px;
+    left: -84px;
+}
+
+.computer-choice {
+    position: absolute;
+    top: 31px;
+    font-size: 35px;
+    left: 247px;
+}
+
+button {
+    font-size: 100px;
+    background: none;
+    outline: none;
+    border: none;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+img {
+    border: 3px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.holder-text {
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+    
+    .choices {
+        padding: 20px 68px;
+    }
+
+    button {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    button {
+        padding: 5px 15px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .choices {
+        padding: 0px 0px;
+        padding-top: 50px;
+    }
+
+    #result {
+        font-size: 1.5rem;
+    }
+    
+    button {
+        padding: 5px 15px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    
+    .heading {
+        font-size: 2rem;
+    }
+
+    .scores {
+        width: 180px;
+    }
+    
+    .choices {
+        padding: 0px 0px;
+        padding-top: 50px;
+    }
+
+    button {
+        font-size: 65px;
+    }
+    .computer-choice {
+        left: 226px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    
+    .scores {
+        width: 150px;
+    }
+
+    #scores {
+        font-size: 2.5rem;
+        margin: auto;
+    }
+
+    #result {
+        font-size: 1.2rem;
+    }
+
+    
+    button {
+        font-size: 50px;
+    }
+
+    .computer-choice {
+        left: 187px;
+    }
+
+    .player-choice {
+        left: -75px;
+    }
+}
